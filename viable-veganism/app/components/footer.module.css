@@ -1,0 +1,36 @@
+.main{
+    width: 100%;
+    height: 15%;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 0.7em;
+    font-weight: 200;
+    background-color: #007E23;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.email-input{
+    background-color: #007E23;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.email-input::placeholder{
+    color: white;
+    font-size: 1em;
+}
+
+.email-submit-button{
+    background-color: white;
+    font-weight: bold;
+    color: #007E23;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 7px;
+}
+
