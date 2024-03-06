@@ -12,8 +12,8 @@ export default function Footer() {
                         Follow Us
                     </p>
                     <div className="flex gap-6 pb-5">
-                        <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
-                        <MdOutlineEmail className="text-2xl cursor-pointer hover:text-blue-600" />
+                        <FaInstagram className="text-white text-2xl cursor-pointer hover:text-yellow-600" />
+                        <MdOutlineEmail className="text-white text-2xl cursor-pointer hover:text-blue-600" />
                     </div>
                 </ul>
             </div>
