@@ -8,8 +8,8 @@ import Header from "../components/header"
 export default function Test(){
     return(
         <div class="w-screen h-screen flex flex-col justify-between">
-            <Header/>
-            <Footer/>
+            {/* <Header/>
+            <Footer/> */}
         </div>
     )
 }
