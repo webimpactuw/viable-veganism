@@ -1,7 +1,6 @@
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
-import logo from "./viable_veganism_logo.png";
 
 export default function Footer() {
     return (
@@ -18,7 +17,7 @@ export default function Footer() {
                 </ul>
             </div>
             <div className="flex flex-col items-center">
-                <img src={logo} alt="Logo" className="h-10 mb-5"/>
+                <img src="viable_veganism_logo.png" alt="Logo" className="h-10 mb-5"/>
                 <div className="flex gap-10">
                     <a href="#" className="text-white text-base hover:text-yellow-600">
                         Home
