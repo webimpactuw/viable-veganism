@@ -1,0 +1,83 @@
+.leafOne {
+    width: 250px;
+    margin-right: 20rem;
+    margin-top: 3rem;
+}
+
+.leafTwo {
+    width: 200px;
+    margin-top: 3rem;
+}
+
+.leafThree {
+    width: 250px;
+    height: auto;
+}
+
+.introParagraph {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-right: 2rem; /* Equivalent to mr-8 */
+    line-height: 1.5em; 
+    /* word-spacing: 0.25em; */
+
+}
+
+.whiteHeaderBox {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.placeHolderDivOne {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 3rem;
+    max-width: 250px;
+}
+
+.purpleImage {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-left: 3rem;
+}
+
+div.whiteHeaderBox h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.faqBox {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+}
+
+div.faqBox h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.fruitsImage {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-right: 3rem;
+}
+
+.placeHolderDivTwo {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-left: 3rem;
+}
