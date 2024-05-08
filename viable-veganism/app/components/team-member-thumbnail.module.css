@@ -1,0 +1,17 @@
+.container{
+    width:22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img{
+    width:100%;
+    margin-bottom: 22px;
+}
+
+.name{
+    color: #007E23;
+    font-size: 22px;
+    text-wrap: nowrap;
+}

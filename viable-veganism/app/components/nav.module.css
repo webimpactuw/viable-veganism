@@ -1,10 +1,9 @@
 .main{
     width: 100%;
     color: #FAF9F6;
-    font-family: "Martel Sans", sans-serif;
     font-size: 0.7em;
     background-color: #007E23;
-
+    font-family: "Martel Sans", sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,6 +14,9 @@
 .header{
     height: 10vh;
     font-weight: bold;
+    position: sticky;
+    top:0px;
+    z-index: 9999;
 }
 
 .logo-txt{
@@ -40,6 +42,8 @@
 .footer{
     height: 15vh;
     font-weight: 200;
+    z-index: 9999;
+    position: sticky;
 }
 
 .email-input{
