@@ -4,30 +4,34 @@ import greenEdge from '../../public/green-edge.png';
 import greenEdge2 from '../../public/greenEdge.png';
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import React, { useRef, useState} from 'react';
 import styles from "./nav.module.css"
 
 export default function Home() {
   const emailPattern = new RegExp(/b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}b/);
   const form = useRef();
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     let email = document.getElementById("email").value;
     if (emailPattern.test(email) || email.length == 0){
-      alert("Failed, invalid email");
+      alert("Failed! invalid email address!");
       console.log("invalid email", email);
       return; // Exit early if email is invalid
-    }
-
+    } else if (isChecked) {
     emailjs
     .sendForm('service_5nqh7do', 'template_imdbvck', form.current, {
                 publicKey: 'nj1Mx2evXp2A2C8pH',
             })
     .then(
         () => {
-            alert("SUCCESS");
+            alert("Success! You are now enrolled in our mailing list!");
             console.log('SUCCESS!');
             console.log("valid email", email);
             e.target.reset();
@@ -37,6 +41,24 @@ export default function Home() {
             console.log('FAILED...', error.text);
         },
     );
+    } else {
+      emailjs
+    .sendForm('service_5nqh7do', 'template_c8r8utk', form.current, {
+                publicKey: 'nj1Mx2evXp2A2C8pH',
+            })
+    .then(
+        () => {
+            alert("Thank you for contacting us! We will reach back to you soon!");
+            console.log('SUCCESS!');
+            console.log("valid email", email);
+            e.target.reset();
+        },
+        (error) => {
+            alert("Failed");
+            console.log('FAILED...', error.text);
+        },
+    );
+    }
   };
 
   return (
@@ -104,11 +126,11 @@ export default function Home() {
           <div className="flex flex-row gap-3">
           <div className="pb-4">
             <p className="pl-4 pb-2">First Name</p>
-            <input className="border-2 border-gray-400 pl-4 py-1 rounded-2xl text-lg" id="first-name" type="email" name="user_fname" placeholder="Type Name"/>
+            <input className="border-2 border-gray-400 pl-4 py-1 rounded-2xl text-lg" id="first-name" type="First_name" name="First_name" placeholder="Type Name"/>
             </div>
             <div>
             <p className="pl-4 pb-2">Last Name</p>
-            <input className="border-2 border-gray-400 pl-4 py-1 rounded-2xl text-lg" id="last-name" type="email" name="user_lname" placeholder="Type Name"/>
+            <input className="border-2 border-gray-400 pl-4 py-1 rounded-2xl text-lg" id="last-name" type="Last_name" name="Last_name" placeholder="Type Name"/>
             </div>
           </div>
           <div className="pb-4">
@@ -117,13 +139,13 @@ export default function Home() {
           </div>
           <div className="text-left pb-4">
             <p className="pl-4 pb-2">Message</p>
-            <textarea className="border-2 border-gray-400 px-4 py-1 rounded-2xl text-lg " rows="10" cols="41"id="message" type="email" name="user_message" placeholder="Type Message"/>
+            <textarea className="border-2 border-gray-400 px-4 py-1 rounded-2xl text-lg " rows="10" cols="41"id="message" type="message" name="message" placeholder="Type Message"/>
           </div>
           <div>
-            <input className="border-2 border-gray-400 rounded-3xl" type="checkbox" id="mail" name="mail" value="mail"/>
+            <input className="border-2 border-gray-400 rounded-3xl" type="checkbox" id="mail" name="mail" value="mail" checked={isChecked} onChange={handleCheckboxChange}/>
             <label className="pl-2" for="mail">Join our mailing list</label><br></br>
           </div>
-          <button className="px-6 py-2 font-semibold bg-greenButton text-white rounded-2xl shadow-sm opacity-100 text-lg" type="submit"onClick={sendEmail}>Send Message</button>
+          <button className="px-6 py-2 font-semibold bg-greenButton text-white rounded-2xl shadow-sm opacity-100 text-lg" type="submit">Send Message</button>
         </form>
         <div><Image className="relative left-44" src="/circle2.png" width={500} height={500} alt="picture"></Image>
         <div className="relative -top-64 left-64"><Image className="relative -top-60 left-2" src="/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
