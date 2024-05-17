@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         customGreen:'#C0E9D9',
         customPurple: '#E5CFFA',
+        customTan: '#F7EFD9',
       },
     },
   },
