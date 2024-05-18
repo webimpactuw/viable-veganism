@@ -1,7 +1,13 @@
+'use client'
 import Link from "next/link"
 import styles from "./nav.module.css"
+import HeaderNavLink from "./HeaderNavLink"
+import { useState } from "react"
 
 export default function Header() {
+
+    const [selectedLink, setSelectedLink] = useState("/home")
+
     return (
         <header className={`${styles.main} ${styles.header}`}>
             <nav class="flex flex-row justify-between w-11/12">
@@ -19,18 +25,25 @@ export default function Header() {
 
                 <section class="flex flex-row items-center 
                                 gap-14 text-lg">
-                    <Link href="/home" className={styles["home-button"]}>
-                        Home
-                    </Link>
-                    <Link href="/about">
-                        About us
-                    </Link>
-                    <Link href="/resources">
-                        Resources
-                    </Link>
-                    <Link href="/contact">
-                        Contact us
-                    </Link>
+                    <HeaderNavLink link="/home" 
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Home"}/>
+                    
+                    <HeaderNavLink link="/about" 
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"About us"}/>
+                    
+                    <HeaderNavLink link="/resources" 
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Resources"}/>
+                    
+                    <HeaderNavLink link="/contact" 
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Contact us"}/>
                 </section>
             </nav>
         </header>
