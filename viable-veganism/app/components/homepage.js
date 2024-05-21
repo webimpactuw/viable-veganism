@@ -1,7 +1,7 @@
 import React from "react";
 import DropDownTabs from "./dropdown";
 import Carousel from "./carousel";
-import './homepage.css';
+import './css/homepage.css';
 
 export default function HomePage() {
     return (
