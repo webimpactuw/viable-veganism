@@ -1,11 +1,11 @@
 import { client } from '@/sanity/lib/client';
 import Image from "next/image";
-import giraffe from "../../public/giraffe.png"
+import giraffe from "../../public/william/giraffe.png"
 import { urlForImage } from '@/sanity/lib/image';
 import Link from "next/link";
-import rt from "../../public/rt.png";
-import rb from "../../public/rb.png";
-import rm from "../../public/rm.png";
+import rt from "../../public/william/rt.png";
+import rb from "../../public/william/rb.png";
+import rm from "../../public/william/rm.png";
 export const revalidate = 5;
 
 export default async function Home() {
@@ -24,25 +24,25 @@ export default async function Home() {
 
     <h1 className='relative font-medium text-5xl pt-16 pb-2 mb-24 text-center'>MEDIA</h1>
     <div className='flex flex-row justify-center gap-x-32'>
-      <div style={{backgroundImage: "url('/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
-        <Image className='relative left-48 bottom-12' src="/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
-          <Image className='relative -top-16' src="/animal.png" alt="animal" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
+      <div style={{backgroundImage: "url('william/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
+        <Image className='relative left-48 bottom-12' src="/william/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
+          <Image className='relative -top-16' src="/william/animal.png" alt="animal" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-6 text-center text-2xl text-wrap w-36'>Animal Understanding</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>
           </button>
         </div>
-        <div style={{backgroundImage: "url('/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
-        <Image className='relative left-48 bottom-12' src="/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
-          <Image className='relative -top-16' src="/agriculture.png" alt="agriculture" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
+        <div style={{backgroundImage: "url('/william/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
+        <Image className='relative left-48 bottom-12' src="/william/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
+          <Image className='relative -top-16' src="/william/agriculture.png" alt="agriculture" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-6 text-center text-xl text-wrap w-36'>Agricultural Exceptionalism</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>
           </button>
         </div>
-        <div style={{backgroundImage: "url('/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
-        <Image className='relative left-48 bottom-12' src="/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
-          <Image className='relative -top-16' src="/dog.png" alt="dog" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
+        <div style={{backgroundImage: "url('/william/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
+        <Image className='relative left-48 bottom-12' src="/william/cl.png" alt="leaf" width={50} height={50} style={{width: 50}}></Image>
+          <Image className='relative -top-16' src="/william/dog.png" alt="dog" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-12 text-center text-xl text-wrap w-24'>What Cody Saw</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
           <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>

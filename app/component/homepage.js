@@ -13,10 +13,10 @@ export default function HomePage() {
                 <div className="w-1/2 pl-10 flex flex-col homeContent">
                     <div className="flex justify-betweem h-1/3">
                         <div>
-                            <img src="leaf1.png" alt="background floating leaf" className="leafOne"/>
+                            <img src="ryan/leaf1.png" alt="background floating leaf" className="leafOne"/>
                         </div>
                         <div>
-                            <img src="leaf3.png" alt="background floating leaf" className="leafTwo"/>
+                            <img src="ryan/leaf3.png" alt="background floating leaf" className="leafTwo"/>
                         </div>
                     </div>
                     <div className="h-1/3">
@@ -26,24 +26,24 @@ export default function HomePage() {
                         </p>
                     </div>
                     <div className="flex justify-end h-1/3 mb-20 ">
-                        <img src="leaf2.png" className="leafThree"/>
+                        <img src="ryan/leaf2.png" className="leafThree"/>
                     </div>
                 </div>
                 <div className="w-1/2 flex justify-center items-center homeImage">
-                    <img src="vegan_bowl.png" alt="Vegan Bowl" className="max-w-full h-auto"/>
+                    <img src="ryan/vegan_bowl.png" alt="Vegan Bowl" className="max-w-full h-auto"/>
                 </div>
             </div>
-            <img src="wavyGreen.png" alt="A wavy green border" className="wavyBorderOne"/>
+            <img src="ryan/wavyGreen.png" alt="A wavy green border" className="wavyBorderOne"/>
             <div className="bg-white min-h-screen w-full flex flex-col items-center">
                 <div className="whiteHeaderBox">
-                    <img src="purple1.png" alt="A purple decorative background image" className="purpleImage"/>
+                    <img src="ryan/purple1.png" alt="A purple decorative background image" className="purpleImage"/>
                     <h1 className="text-5xl font-bold m-20">WHAT WE ARE</h1>
                     <div className="placeHolderDivOne"></div>
                 </div>
                 <div className="flex flex-row p-10 pb-0 mt-20 relative imageContainer">
                     <div className="w-1/2">
-                        <img src="vegan_rice_dish.png" alt="Vegan Rice Bowl" className="riceDish"/>
-                        <img src="vegan_noodle_dish.png" alt="Vegan Noodle Dish" className="noodleDish"/>
+                        <img src="ryan/vegan_rice_dish.png" alt="Vegan Rice Bowl" className="riceDish"/>
+                        <img src="ryan/vegan_noodle_dish.png" alt="Vegan Noodle Dish" className="noodleDish"/>
                     </div>
                     <div className="w-1/2">
                         <p className="whatWeAreText">
@@ -54,16 +54,16 @@ export default function HomePage() {
                 <div className="faqBox">
                     <div className="placeHolderDivTwo"></div>
                     <h1 className="text-5xl font-bold m-20 faqHeader">FAQS</h1>
-                    <img src="fruits1.png" alt="Background image of two fruits" className="fruitsImage"/>
+                    <img src="ryan/fruits1.png" alt="Background image of two fruits" className="fruitsImage"/>
                 </div>
                 <DropDownTabs />
                 <div className="whiteHeaderBox mt-20">
-                    <img src="purple1.png" alt="A purple decorative background image" className="purpleImage"/>
+                    <img src="ryan/purple1.png" alt="A purple decorative background image" className="purpleImage"/>
                     <h1 className="text-5xl font-bold m-20">MYTHS</h1>
                     <div className="placeHolderDivOne"></div>
                 </div>
             </div>
-            <img src="wavyTan.png" alt="A wavy tan border" className="wavyBorderOne"/>
+            <img src="ryan/wavyTan.png" alt="A wavy tan border" className="wavyBorderOne"/>
             <div className="bg-customTan min-h-screen w-full">
                 <div className="carouselContainer">
                     <Carousel />
