@@ -1,7 +1,7 @@
 import { Khmer } from "next/font/google";
 import "./globals.css";
 import Footer from "./component/Foot.js";
-//import Header from "./component/Header.js";
+// import Header from "./component/Header.js";
 
 const inter = Khmer({ subsets: ["khmer"], weight: '400' });
 

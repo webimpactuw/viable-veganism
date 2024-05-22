@@ -43,7 +43,7 @@ export default function Footer() {
                     <div>
                         Follow us
                     </div>
-                    <div clasName="flex flex-row gap-2 mt-1 items-center">
+                    <div className="flex flex-row gap-2 mt-1 items-center">
                         <Link href={"https://www.instagram.com/viableveganismuw/"}>
                             <img src="ig-icon.png"/>
                         </Link>
