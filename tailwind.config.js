@@ -15,4 +15,13 @@ module.exports = {
     },
   },
   plugins: [],
+  theme: {
+    extend:{
+      colors: {
+        'greenContact' : '#C0E9D9',
+        'greenButton' : '#007E23',
+        'pinkContact' : '#fffcf4',
+      },
+    },
+  },
 };

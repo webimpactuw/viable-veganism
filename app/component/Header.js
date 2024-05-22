@@ -1,6 +1,7 @@
 import Link from "next/link"
 import styles from "./nav.module.css"
 
+
 export default function Header() {
     return (
         <header className={`${styles.main} ${styles.header}`}>
@@ -17,7 +18,7 @@ export default function Header() {
                     </div>
                 </section>
 
-                <section class="flex flex-row items-center 
+                <section class="flex flex-row items-center
                                 gap-14 text-lg">
                     <Link href="/home" className={styles["home-button"]}>
                         Home
