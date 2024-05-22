@@ -4,8 +4,8 @@ import styles from "./nav.module.css"
 export default function Header() {
     return (
         <header className={`${styles.main} ${styles.header}`}>
-            <nav class="flex flex-row justify-between w-11/12">
-                <section class="flex flex-row items-center gap-3">
+            <nav className="flex flex-row justify-between w-11/12">
+                <section className="flex flex-row items-center gap-3">
                     <img src="vegan-logo.png" class="max-w-14 max-h-14"/>
                     <div className={styles["logo-txt"]}>
                         <div >
@@ -17,7 +17,7 @@ export default function Header() {
                     </div>
                 </section>
 
-                <section class="flex flex-row items-center 
+                <section className="flex flex-row items-center 
                                 gap-14 text-lg">
                     <Link href="/home" className={styles["home-button"]}>
                         Home

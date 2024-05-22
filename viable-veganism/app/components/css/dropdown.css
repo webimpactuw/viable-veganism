@@ -1,0 +1,45 @@
+svg {
+  display: none;
+}
+
+/* div {
+    width: 100%;
+}
+
+.accordion-container {
+    padding: 20px;
+  }
+  
+  .accordion-item {
+    font-family: 'Martel Sans', sans-serif;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion-text {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .accordion-item {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .accordion-text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .accordion-text {
+      font-size: 12px;
+    }
+  }
+   */

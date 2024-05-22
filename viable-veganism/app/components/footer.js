@@ -4,12 +4,12 @@ import styles from "./nav.module.css"
 export default function Footer() {
     return (
         <footer className={`${styles.main} ${styles.footer}`}>
-            <nav class="flex flex-row justify-between w-5/6 items-center">
+            <nav className="flex flex-row justify-between w-5/6 items-center">
                 <section>
                     <div>
                         Follow us
                     </div>
-                    <div class="flex flex-row gap-2 mt-1 items-center">
+                    <div className="flex flex-row gap-2 mt-1 items-center">
                         <Link href={"https://www.instagram.com/viableveganismuw/"}>
                             <img src="ig-icon.png"/>
                         </Link>
@@ -19,11 +19,11 @@ export default function Footer() {
 
                     </div>
                 </section>
-                <section class="flex flex-col gap-3">
-                    <div class="flex items-center justify-center">
+                <section className="flex flex-col gap-3">
+                    <div className="flex items-center justify-center">
                         <img src="vegan-logo.png" class="max-w-12 max-h-12"/>
                     </div>
-                    <div class="flex flex-row gap-6">
+                    <div className="flex flex-row gap-6">
                         <Link href="/home">
                             Home
                         </Link>
@@ -38,11 +38,11 @@ export default function Footer() {
                         </Link>
                     </div>
                 </section>
-                <section class="flex flex-col gap-2">
+                <section className="flex flex-col gap-2">
                     <div>
                         Join our mailing list
                     </div>
-                    <div class="flex flex-row gap-3">
+                    <div className="flex flex-row gap-3">
                         <input className={styles["email-input"]} type="text" placeholder="Your email" />
                         <button className={styles["email-submit-button"]}>
                             JOIN

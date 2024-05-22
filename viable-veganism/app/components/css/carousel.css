@@ -1,0 +1,120 @@
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.carousel-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.custom-button img {
+  width: 45px; 
+  height: auto; 
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0;
+  padding: 3rem;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+  
+.slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-container h1 {
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: fit-content;
+  padding: 5px 60px;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  background-color: white;
+  z-index: 1; 
+  font-weight: bold;
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slide img {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.slide-content {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content h3 {
+  font-size: 24px;
+  font-family: 'Martel Sans', sans-serif;
+  font-weight: bold;
+  margin: 20px 70px 10px 40px;
+  text-align: center;
+}
+
+.slide-content p {
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+@media (min-width: 768px) {
+  .carousel-container {
+    padding: 2rem;
+  }
+  .carousel-container h1 {
+    font-size: 24px;
+  }
+  .slide-content h3 {
+    font-size: 20px;
+  }
+  .slide-content p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Adjust carousel container padding and header font size for small screens */
+  .carousel-container {
+    padding: 1rem;
+    max-width: 90%;
+  }
+  .carousel-container h1 {
+    font-size: 20px;
+  }
+  .slide-content h3 {
+    font-size: 18px;
+  }
+  .slide-content p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
