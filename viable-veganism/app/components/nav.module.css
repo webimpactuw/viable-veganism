@@ -1,0 +1,66 @@
+.main{
+    width: 100%;
+    color: #FAF9F6;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 0.7em;
+    background-color: #007E23;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+.header{
+    height: 10vh;
+    font-weight: bold;
+}
+
+.logo-txt{
+    font-family: "Akaya Kanadaka", system-ui;
+    font-size: 20px;
+    line-height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-button{
+    background-color: #FAF9F6;
+    color: #007E23;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 1em;
+}
+
+.footer{
+    height: 15vh;
+    font-weight: 200;
+}
+
+.email-input{
+    outline-width: 0;
+    background-color: #007E23;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.email-input::placeholder{
+    color: #FAF9F6;
+    font-size: 1em;
+}
+
+.email-submit-button{
+    background-color: #FAF9F6;
+    font-weight: bold;
+    color: #007E23;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 7px;
+}
+
