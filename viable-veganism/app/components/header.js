@@ -6,7 +6,7 @@ export default function Header() {
         <header className={`${styles.main} ${styles.header}`}>
             <nav class="flex flex-row justify-between w-11/12">
                 <section class="flex flex-row items-center gap-3">
-                    <img src="vegan-logo.png" class="max-w-14 max-h-14"/>
+                    <img src="./images/logo.png" class="max-w-14 max-h-14" height={40} width={40}/>
                     <div className={styles["logo-txt"]}>
                         <div >
                             Viable
@@ -27,6 +27,9 @@ export default function Header() {
                     </Link>
                     <Link href="/resources">
                         Resources
+                    </Link>
+                    <Link href="/contact">
+                        Meals
                     </Link>
                     <Link href="/contact">
                         Contact us

@@ -11,17 +11,20 @@ export default function Footer() {
                     </div>
                     <div class="flex flex-row gap-2 mt-1 items-center">
                         <Link href={"https://www.instagram.com/viableveganismuw/"}>
-                            <img src="ig-icon.png"/>
+                            <img src="/images/SMicons/IG_vv.png" class="max-w-12 max-h-12" height={20} width={20}/>
                         </Link>
                         <Link href={"https://huskylink.washington.edu/organization/viableveganismuw"}>
-                            <img src="mail-icon.png"/>
+                            <img src="/images/SMicons/mail_vv.png" class="max-w-12 max-h-12" height={20} width={20}/>
+                        </Link>
+                        <Link href={"https://discord.gg/cjuq7ppnry"}>
+                            <img src="/images/SMicons/discord_vv.png" class="max-w-12 max-h-12" height={20} width={20} style={{marginTop: "2px"}}/>
                         </Link>
 
                     </div>
                 </section>
                 <section class="flex flex-col gap-3">
                     <div class="flex items-center justify-center">
-                        <img src="vegan-logo.png" class="max-w-12 max-h-12"/>
+                        <img src="./images/logo.png" class="max-w-12 max-h-12" height={40} width={40}/>
                     </div>
                     <div class="flex flex-row gap-6">
                         <Link href="/home">
