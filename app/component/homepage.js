@@ -21,7 +21,16 @@ export default function HomePage() {
                     </div>
                     <div className="h-1/3">
                         <h1 className="mainHeader">Viable Veganism</h1>
-                        <p className="introParagraph">
+                        <p style={{
+                            textAlign: "left",
+                            padding: "1rem",
+                            marginRight: "2rem",
+                            marginLeft: "4rem",
+                            fontSize: "15px",
+                            fontWeight: "lighter",
+                            lineHeight: "50px",
+                            maxWidth: "600px"
+                        }}>
                             Viable Veganism is a student organization at UW working to promote veganism through education about the realities of the livestock industry and commercial use of animals, in general.
                         </p>
                     </div>
@@ -46,7 +55,13 @@ export default function HomePage() {
                         <img src="ryan/vegan_noodle_dish.png" alt="Vegan Noodle Dish" className="noodleDish"/>
                     </div>
                     <div className="w-1/2">
-                        <p className="whatWeAreText">
+                    <p style={{
+                        fontSize: "12px",
+                        fontWeight: "lighter",
+                        lineHeight: "37.6px",
+                        textAlign: "left",
+                        padding: "0 2rem"
+                    }}>
                             Viable Veganism is a student organization at UW working to promote veganism through education about the realities of the livestock industry and commercial use of animals, in general. We welcome both vegans and nonvegans because we believe progress occurs through mutual understanding and the willingness to better oneself over time. We frequently hold social events, such as cooking sessions or restaurant runs, and we also communicate with UW Dining about improving vegan options on campus. Overall, we believe in a world without animal cruelty.
                         </p>
                     </div>
