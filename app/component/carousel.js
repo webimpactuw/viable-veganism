@@ -78,7 +78,17 @@ export default function Carousel() {
               <div className="slide-content">
                 <h3>{slide.title}</h3>
                 <img src={slide.imageUrl} alt={slide.title} />
-                <p>{slide.description}</p>
+                <p style={{
+                  fontSize: "10px",
+                  lineHeight: "40px",
+                  textAlign: "left",
+                  marginTop: "30px",
+                  marginBottom: "20px",
+                  maxWidth: "90%",
+                  fontWeight: "lighter"
+                }}>
+                  {slide.description}
+                </p>
                 <img src={slide.logo} alt={slide.title} />
               </div>
             </div>

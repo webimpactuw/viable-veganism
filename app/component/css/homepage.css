@@ -18,7 +18,7 @@
     height: auto;
 }
 
-.introParagraph {
+/* .introParagraph {
     font-size: 25px;
     font-weight: 350;
     line-height: 50px;
@@ -27,7 +27,7 @@
     margin-right: 2rem;
     margin-left: 4rem;
     max-width: 600px;
-}
+} */
 
 .wavyBorderOne {
     background-color: white;
