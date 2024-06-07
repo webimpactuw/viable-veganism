@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
-import greenEdge from '../../public/green-edge.png';
-import greenEdge2 from '../../public/greenEdge.png';
+import greenEdge from '../../public/william/green-edge.png';
+import greenEdge2 from '../../public/william/greenEdge.png';
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState} from 'react';
@@ -63,11 +63,11 @@ export default function Home() {
   };
 
   return (
-    <body className="bg-pinkContact -mb-24  font-Roboto">
+    <body className="bg-pinkContact -mb-24 font-Roboto">
       <header className={`${styles.main} ${styles.header}`}>
-            <nav className="flex flex-row justify-between w-11/12">
-                <section className="flex flex-row items-center gap-3">
-                    <img src="vegan-logo.png" className="max-w-14 max-h-14" alt="logo"/>
+            <nav class="flex flex-row justify-between w-11/12">
+                <section class="flex flex-row items-center gap-3">
+                    <img src="william/vegan-logo.png" class="max-w-14 max-h-14"/>
                     <div className={styles["logo-txt"]}>
                         <div >
                             Viable
@@ -96,10 +96,10 @@ export default function Home() {
             </nav>
         </header>
     <div className="bg-greenContact static h-5/6 text-center pb-36" >
-    <div className="relative left-24 top-16 z-2 w-60"><Image src="/leaf4.png" width={200}
+    <div className="relative left-24 top-16 z-2 w-60"><Image src="/william/leaf4.png" width={200}
               height={100}  alt="green-edge"></Image></div>
       <div className="relative top-481 font-medium text-5xl pt-32 pb-2">GET IN TOUCH</div>
-      <div className="flex justify-center pb-4"><Image src="/leaf.png" alt="Leaf Logo"
+      <div className="flex justify-center pb-4"><Image src="/william/leaf.png" alt="Leaf Logo"
               width={200}
               height={100}></Image></div>
       <p className="font-normal text-lg">For questions or feedback fill out the form below</p>
@@ -107,9 +107,9 @@ export default function Home() {
       <p className="text-emerald-800 font-normal text-lg">Feel free to join us on Tuesdays  6:30 - 7:30 PM</p>
       <p className="text-emerald-800 font-normal text-lg">Savery Hall 139</p>
       <div className="flex">
-      <div className="relative left-3/4 z-2"><Image className="relative left-2" src="/leaf2.png" width={250}
+      <div className="relative left-3/4 z-2"><Image className="relative left-2" src="/william/leaf2.png" width={250}
               height={125}  alt="green-edge" ></Image></div>
-      <div className="relative right-24 top-24 z-2 w-64"><Image src="/leaf3.png" width={150}
+      <div className="relative right-24 top-24 z-2 w-64"><Image src="/william/leaf3.png" width={150}
               height={80}  alt="green-edge" ></Image></div>
       </div>
 
@@ -118,8 +118,8 @@ export default function Home() {
     <div className="relative -top-24"><Image src={greenEdge} alt="green-edge"></Image></div>
     <div className="static">
       <div className="absolute">
-      <Image className="relative -top-64 left-96" src="/Petals2.png" width={500} height={500} alt="picture"></Image>
-      <div className="relative left-64"><Image className="relative left-96" src="/Petals1.png" width={500} height={500} alt="picture"></Image></div></div>
+      <Image className="relative -top-64 left-96" src="/william/Petals2.png" width={500} height={500} alt="picture"></Image>
+      <div className="relative left-64"><Image className="relative left-96" src="/william/Petals1.png" width={500} height={500} alt="picture"></Image></div></div>
     <div className="relative -top-56 font-medium text-5xl pt-32 pb-2 text-center">LET&apos;S CHAT</div>
     <div className="flex relative -top-44 left-24 w-11/12">
       <div className="flex h-4/6"></div>
@@ -148,10 +148,10 @@ export default function Home() {
           </div>
           <button className="px-6 py-2 font-semibold bg-greenButton text-white rounded-2xl shadow-sm opacity-100 text-lg" type="submit">Send Message</button>
         </form>
-        <div><Image className="relative left-44" src="/circle2.png" width={500} height={500} alt="picture"></Image>
-        <div className="relative -top-64 left-64"><Image className="relative -top-60 left-2" src="/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
-        <div className="relative "><div className="relative top-56 -left-4 z-10"><Image className="relative top-2 left-1" src="/pic1.png" width={200} height={200} alt="picture"></Image></div>
-        <div className="relative top-4 -left-20"><Image className="relative -left-2" src="/circle1.png" width={350} height={350} alt="picture" priority></Image></div></div>
+        <div><Image className="relative left-44" src="/william/circle2.png" width={500} height={500} alt="picture"></Image>
+        <div className="relative -top-64 left-64"><Image className="relative -top-60 left-2" src="/william/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
+        <div className="relative "><div className="relative top-56 -left-4 z-10"><Image className="relative top-2 left-1" src="/william/pic1.png" width={200} height={200} alt="picture"></Image></div>
+        <div className="relative top-4 -left-20"><Image className="relative -left-2" src="/william/circle1.png" width={350} height={350} alt="picture" priority></Image></div></div>
     </div>
     </div>
 
@@ -160,9 +160,9 @@ export default function Home() {
     <div className="relative -top-64"><Image src={greenEdge2} alt="green-edge"></Image></div>
     <div className="bg-greenContact relative h-svh -top-96 text-center">
       <div className="bg-greenContact pb-40">
-      <div className="relative pt-24 left-24 top-18 z-2 w-64"><Image src="/leaf4.png" width={200}
+      <div className="relative pt-24 left-24 top-18 z-2 w-64"><Image src="/william/leaf4.png" width={200}
               height={100}  alt="green-edge"></Image></div>
-      <div className="relative left-3/4 z-2 w-60 rotate-12"><Image className="relative left-2" src="/leaf2.png" width={250}
+      <div className="relative left-3/4 z-2 w-60 rotate-12"><Image className="relative left-2" src="/william/leaf2.png" width={250}
               height={125}  alt="green-edge"></Image></div>
       <div className="relative -top-48">
         <div className="font-medium text-5xl pb-4">PLANT-BASED OPTIONS AT UW REQUEST</div>
@@ -175,9 +175,9 @@ export default function Home() {
           </button>
         </div>
         <div className="flex relative -top-24">
-          <div className="relative top-12 left-3/4 z-2 w-60"><Image className="relative left-12" src="/leaf5.png" width={150}
+          <div className="relative top-12 left-3/4 z-2 w-60"><Image className="relative left-12" src="/william/leaf5.png" width={150}
                 height={80}  alt="green-edge" priority></Image></div>
-          <div className="relative -top-12 right-24 z-2 w-64"><Image src="/leaf6.png" width={250}
+          <div className="relative -top-12 right-24 z-2 w-64"><Image src="/william/leaf6.png" width={250}
                 height={125}  alt="green-edge" priority></Image></div>
         </div>
       </div>

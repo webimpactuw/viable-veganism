@@ -1,0 +1,289 @@
+.greenSection {
+    padding-top: 4em;
+}
+
+.leafOne {
+    width: 250px;
+    margin-right: 20rem;
+    margin-top: 3rem;
+}
+
+.leafTwo {
+    width: 200px;
+    margin-top: 3rem;
+}
+
+.leafThree {
+    width: 250px;
+    height: auto;
+}
+
+/* .introParagraph {
+    font-size: 25px;
+    font-weight: 350;
+    line-height: 50px;
+    text-align: left;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-left: 4rem;
+    max-width: 600px;
+} */
+
+.wavyBorderOne {
+    background-color: white;
+}
+
+.whiteHeaderBox {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.placeHolderDivOne {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 3rem;
+    max-width: 250px;
+}
+
+.purpleImage {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-left: 3rem;
+}
+
+div.whiteHeaderBox h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.faqBox {
+    display: flex;
+    flex-direction: row;
+    font-size: 3rem;
+    width: 100%;
+}
+
+div.faqBox h1 {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.riceDish {
+    width: 428px;
+    height: 350px;
+}
+
+.noodleDish {
+    width: 427px;
+    height: 334px;
+    transform: translate(250px, -250px);
+}
+
+.whatWeAreText {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 37.6px;
+    text-align: left;
+    padding: 0 2rem;
+}
+
+.fruitsImage {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-right: 3rem;
+}
+
+.placeHolderDivTwo {
+    display: flex;
+    max-width: 250px;
+    height: auto;
+    flex-grow: 1;
+    margin-left: 3rem;
+}
+
+h1 {
+    font-family: 'Martel Sans', sans-serif;
+    font-size: 48px;
+}
+
+.mainHeader {
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.carouselContainer {
+    padding: 0 5rem 5rem 5rem;
+}
+
+@media (max-width: 768px) {
+    .introParagraph {
+        font-size: 25px;
+        font-weight: 350;
+        text-align: center;
+    }
+
+    .mainHeader {
+        text-align: center;
+        margin: 0;
+    }
+
+    .homeContent {
+        flex-grow: 1;
+        padding-left: 0;
+    }
+
+    .homeImage {
+        display: none;
+    }
+
+    .leafOne {
+        display: none;
+    }
+    
+    .leafTwo {
+        display: none;
+    }
+    
+    .leafThree {
+        display: none;
+    }
+
+    .purpleImage {
+        display: none;
+    }
+    
+    div.whiteHeaderBox h1 {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .placeHolderDivOne {
+        display: none;
+    }
+
+    .riceDish {
+        width: 363px;
+        height: 298px;
+        margin-bottom: 110px;
+    }
+    
+    .noodleDish {
+        width: 363px;
+        height: 298px;
+        transform: none;
+    }
+
+    .imageContainer {
+        margin-top: 20px;
+    }
+
+    .whatWeAreText {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 37.6px;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .carouselContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .introParagraph {
+        font-size: 25px;
+        font-weight: 350;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .mainHeader {
+        text-align: center;
+        margin: 0;
+    }
+
+    .homeContent {
+        flex-grow: 1;
+        padding-left: 0;
+    }
+
+    .homeImage {
+        max-width: fit-content;
+    }
+
+    .leafOne {
+        display: none;
+    }
+    
+    .leafTwo {
+        display: none;
+    }
+    
+    .leafThree {
+        display: none;
+    }
+
+    .purpleImage {
+        display: none;
+    }
+    
+    div.whiteHeaderBox h1 {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .placeHolderDivOne {
+        display: none;
+    }
+
+    .riceDish {
+        width: 363px;
+        height: 298px;
+        margin-left: 50px;
+    }
+    
+    .noodleDish {
+        width: 363px;
+        height: 298px;
+        transform: none;
+        margin-left: 50px;
+    }
+
+    .imageContainer {
+        margin-top: 20px;
+    }
+
+    .whatWeAreText {
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 37.6px;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .carouselContainer {
+        padding-left: 0;
+        padding-right: 40px;
+        margin-right: 300px;
+    }
+  }
+  
