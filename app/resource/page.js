@@ -29,7 +29,7 @@ export default async function Home() {
           <Image className='relative -top-16' src="/animal.png" alt="animal" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-6 text-center text-2xl text-wrap w-36'>Animal Understanding</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>
+          <Link href="https://www.theguardian.com/news/2023/may/30/can-humans-ever-understand-how-animals-think" target="_blank">View</Link>
           </button>
         </div>
         <div style={{backgroundImage: "url('/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
@@ -37,7 +37,7 @@ export default async function Home() {
           <Image className='relative -top-16' src="/agriculture.png" alt="agriculture" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-6 text-center text-xl text-wrap w-36'>Agricultural Exceptionalism</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>
+          <Link href="https://www.vox.com/future-perfect/2023/8/31/23852325/farming-myths-agricultural-exceptionalism-pollution-labor-animal-welfare-laws" target="_blank">View</Link>
           </button>
         </div>
         <div style={{backgroundImage: "url('/blue_bg.png')", padding: 20, margin: 10, borderRadius: 20}}>
@@ -45,7 +45,7 @@ export default async function Home() {
           <Image className='relative -top-16' src="/dog.png" alt="dog" width={200} height={200} style={{width: 200, borderRadius: 10}}></Image>
           <h2 className='relative -top-12 left-12 text-center text-xl text-wrap w-24'>What Cody Saw</h2>
           <button className="relative -top-4 left-11 px-8 py-2 font-semibold bg-white text-black rounded-3xl shadow-sm opacity-100 text-lg self-center">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View</Link>
+          <Link href="https://www.youtube.com/watch?v=VTjtN0XnuDQ" target="_blank">View</Link>
           </button>
         </div>
     </div>
@@ -77,7 +77,7 @@ export default async function Home() {
       </div>
       <div className='flex justify-center pt-12 '>
       <button className="px-8 py-2 font-semibold bg-blue-800 text-white rounded-3xl shadow-sm opacity-100 text-lg self-center">
-          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSelec9zr1bjpC6iyzTupyM5GS4oQ6EhmRq6nmc7yVkjcjl3Xg/viewform" target="_blank">View More</Link>
+          <Link href="https://www.instagram.com/viableveganismuw/" target="_blank">View More</Link>
           </button>
       </div>
     </div>

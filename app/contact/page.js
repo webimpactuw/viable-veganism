@@ -1,11 +1,11 @@
-"use client";
+"use client"
 import Image from "next/image";
 import greenEdge from '../../public/green-edge.png';
 import greenEdge2 from '../../public/greenEdge.png';
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState} from 'react';
-import styles from "./nav.module.css"
+import styles from "./nav.module.css";
 
 export default function Home() {
   const emailPattern = new RegExp(/b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}b/);
@@ -59,14 +59,15 @@ export default function Home() {
         },
     );
     }
+    setIsChecked(false);
   };
 
   return (
     <body className="bg-pinkContact -mb-24  font-Roboto">
       <header className={`${styles.main} ${styles.header}`}>
-            <nav class="flex flex-row justify-between w-11/12">
-                <section class="flex flex-row items-center gap-3">
-                    <img src="vegan-logo.png" class="max-w-14 max-h-14"/>
+            <nav className="flex flex-row justify-between w-11/12">
+                <section className="flex flex-row items-center gap-3">
+                    <img src="vegan-logo.png" className="max-w-14 max-h-14" alt="logo"/>
                     <div className={styles["logo-txt"]}>
                         <div >
                             Viable
@@ -77,7 +78,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section class="flex flex-row items-center
+                <section className="flex flex-row items-center
                                 gap-14 text-lg">
                     <Link href="/home" className={styles["home-button"]}>
                         Home
