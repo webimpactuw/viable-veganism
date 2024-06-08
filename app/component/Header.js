@@ -1,13 +1,18 @@
+'use client'
 import Link from "next/link"
 import styles from "./nav.module.css"
-
+import HeaderNavLink from "./HeaderNavLink"
+import { useState } from "react"
 
 export default function Header() {
+
+    const [selectedLink, setSelectedLink] = useState("/home")
+
     return (
         <header className={`${styles.main} ${styles.header}`}>
             <nav class="flex flex-row justify-between w-11/12">
                 <section class="flex flex-row items-center gap-3">
-                    <img src="vegan-logo.png" class="max-w-14 max-h-14"/>
+                    <img src="Seongha/vegan-logo.png" class="max-w-14 max-h-14"/>
                     <div className={styles["logo-txt"]}>
                         <div >
                             Viable
@@ -20,18 +25,30 @@ export default function Header() {
 
                 <section class="flex flex-row items-center
                                 gap-14 text-lg">
-                    <Link href="/home" className={styles["home-button"]}>
-                        Home
-                    </Link>
-                    <Link href="/about">
-                        About us
-                    </Link>
-                    <Link href="/resources">
-                        Resources
-                    </Link>
-                    <Link href="/contact">
-                        Contact us
-                    </Link>
+                    <HeaderNavLink link="./"
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Home"}/>
+
+                    <HeaderNavLink link="/about"
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"About us"}/>
+
+                    <HeaderNavLink link="/resource"
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Resources"}/>
+
+                    <HeaderNavLink link="/meal"
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Meals"}/>
+
+                    <HeaderNavLink link="/contact"
+                        selectedLink = {selectedLink}
+                        setSelectedLink = {setSelectedLink}
+                        txt={"Contact us"}/>
                 </section>
             </nav>
         </header>

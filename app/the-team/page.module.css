@@ -1,0 +1,13 @@
+.content{
+  background-image: url('/the-team/team-page-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F7EFD9;
+  padding: 7% 15% 0 15%;
+  height: 1500px;
+  position: relative;
+}
+
+.headerImg{
+  width: 46%;
+}

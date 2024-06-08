@@ -1,9 +1,10 @@
-import { Khmer } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "./component/Foot.js";
 import Header from "./component/Header.js";
+import Footer from "./component/Foot.js";
+import Head from "next/head";
 
-const inter = Khmer({ subsets: ["khmer"], weight: '400' });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,8 +14,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet"/>
+      </head>
+      <body className={inter.className}>
+      <Header />
+      {children}
       <Footer />
+      </body>
     </html>
   );
 }

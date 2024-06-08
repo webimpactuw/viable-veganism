@@ -5,7 +5,6 @@ import greenEdge2 from '../../public/william/greenEdge.png';
 import Link from "next/link";
 import emailjs from '@emailjs/browser';
 import React, { useRef, useState} from 'react';
-import styles from "./nav.module.css";
 
 export default function Home() {
   const emailPattern = new RegExp(/b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}b/);
@@ -63,38 +62,7 @@ export default function Home() {
   };
 
   return (
-    <body className="bg-pinkContact -mb-24 font-Roboto">
-      <header className={`${styles.main} ${styles.header}`}>
-            <nav class="flex flex-row justify-between w-11/12">
-                <section class="flex flex-row items-center gap-3">
-                    <img src="william/vegan-logo.png" class="max-w-14 max-h-14"/>
-                    <div className={styles["logo-txt"]}>
-                        <div >
-                            Viable
-                        </div>
-                        <div >
-                            Veganism
-                        </div>
-                    </div>
-                </section>
-
-                <section className="flex flex-row items-center
-                                gap-14 text-lg">
-                    <Link href="/home" className={styles["home-button"]}>
-                        Home
-                    </Link>
-                    <Link href="/about">
-                        About us
-                    </Link>
-                    <Link href="/resources">
-                        Resources
-                    </Link>
-                    <Link href="/contact">
-                        Contact us
-                    </Link>
-                </section>
-            </nav>
-        </header>
+    <div className="bg-pinkContact -mb-24 font-Roboto">
     <div className="bg-greenContact static h-5/6 text-center pb-36" >
     <div className="relative left-24 top-16 z-2 w-60"><Image src="/william/leaf4.png" width={200}
               height={100}  alt="green-edge"></Image></div>
@@ -104,8 +72,6 @@ export default function Home() {
               height={100}></Image></div>
       <p className="font-normal text-lg">For questions or feedback fill out the form below</p>
       <p className="font-normal text-lg pb-4">and we&apos;ll get back to you as soon as possible.</p>
-      <p className="text-emerald-800 font-normal text-lg">Feel free to join us on Tuesdays  6:30 - 7:30 PM</p>
-      <p className="text-emerald-800 font-normal text-lg">Savery Hall 139</p>
       <div className="flex">
       <div className="relative left-3/4 z-2"><Image className="relative left-2" src="/william/leaf2.png" width={250}
               height={125}  alt="green-edge" ></Image></div>
@@ -182,7 +148,7 @@ export default function Home() {
         </div>
       </div>
     </div>
-    </body>
+    </div>
   );
 
 }

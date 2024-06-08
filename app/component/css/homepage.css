@@ -147,11 +147,11 @@ h1 {
     .leafOne {
         display: none;
     }
-    
+
     .leafTwo {
         display: none;
     }
-    
+
     .leafThree {
         display: none;
     }
@@ -159,7 +159,7 @@ h1 {
     .purpleImage {
         display: none;
     }
-    
+
     div.whiteHeaderBox h1 {
         display: flex;
         flex-grow: 1;
@@ -167,7 +167,7 @@ h1 {
         text-align: center;
         margin: 20px;
     }
-    
+
     .placeHolderDivOne {
         display: none;
     }
@@ -177,7 +177,7 @@ h1 {
         height: 298px;
         margin-bottom: 110px;
     }
-    
+
     .noodleDish {
         width: 363px;
         height: 298px;
@@ -229,11 +229,11 @@ h1 {
     .leafOne {
         display: none;
     }
-    
+
     .leafTwo {
         display: none;
     }
-    
+
     .leafThree {
         display: none;
     }
@@ -241,7 +241,7 @@ h1 {
     .purpleImage {
         display: none;
     }
-    
+
     div.whiteHeaderBox h1 {
         display: flex;
         flex-grow: 1;
@@ -249,7 +249,7 @@ h1 {
         text-align: center;
         margin: 20px;
     }
-    
+
     .placeHolderDivOne {
         display: none;
     }
@@ -259,7 +259,7 @@ h1 {
         height: 298px;
         margin-left: 50px;
     }
-    
+
     .noodleDish {
         width: 363px;
         height: 298px;
@@ -286,4 +286,3 @@ h1 {
         margin-right: 300px;
     }
   }
-  

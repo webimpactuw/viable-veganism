@@ -1,13 +1,22 @@
+import { client } from '@/sanity/lib/client';
 import React from "react";
 import DropDownTabs from "./dropdown";
 import Carousel from "./carousel";
 import './css/homepage.css';
+export const revalidate = 5;
 
-export default function HomePage() {
+export default async function HomePage() {
+    async function getTime() {
+        const query = `*[_type == "meeting"]`;
+        const times = await client.fetch(query);
+        console.log(times);
+        return times;
+    }
+
+    const allTime = await getTime();
+
     return (
         <div className="text-black">
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
             <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Moulpali&display=swap" rel="stylesheet"/>
             <div className="bg-customGreen h-screen w-full flex flex-row justify-around items-center greenSection">
                 <div className="w-1/2 pl-10 flex flex-col homeContent">
@@ -26,13 +35,26 @@ export default function HomePage() {
                             padding: "1rem",
                             marginRight: "2rem",
                             marginLeft: "4rem",
-                            fontSize: "15px",
-                            fontWeight: "lighter",
+                            fontSize: "20px",
+                            fontWeight: "light",
                             lineHeight: "50px",
                             maxWidth: "600px"
                         }}>
                             Viable Veganism is a student organization at UW working to promote veganism through education about the realities of the livestock industry and commercial use of animals, in general.
                         </p>
+                            {allTime.map((meeting) => (
+                                <p className="text-emerald-800 font-normal text-lg" style={{
+                                    textAlign: "left",
+                                    padding: "1rem",
+                                    marginRight: "2rem",
+                                    marginLeft: "4rem",
+                                    fontSize: "20px",
+                                    fontWeight: "light",
+                                    lineHeight: "50px",
+                                    maxWidth: "600px"}} key={meeting._id}>
+                                Feel free to join us on {meeting.time} <br /> {meeting.location}
+                                </p>
+                            ))}
                     </div>
                     <div className="flex justify-end h-1/3 mb-20 ">
                         <img src="ryan/leaf2.png" className="leafThree"/>
@@ -56,8 +78,8 @@ export default function HomePage() {
                     </div>
                     <div className="w-1/2">
                     <p style={{
-                        fontSize: "12px",
-                        fontWeight: "lighter",
+                        fontSize: "20px",
+                        fontWeight: "light",
                         lineHeight: "37.6px",
                         textAlign: "left",
                         padding: "0 2rem"

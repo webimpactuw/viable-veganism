@@ -8,7 +8,7 @@ import rb from "../../public/william/rb.png";
 import rm from "../../public/william/rm.png";
 export const revalidate = 5;
 
-export default async function Home() {
+export default async function resource() {
   async function getPosts() {
     const query = `*[_type == "post"]`;
     const posts = await client.fetch(query);
@@ -19,7 +19,7 @@ export default async function Home() {
 
 
   return (
-    <body className='bg-white'>
+    <div className='bg-white'>
     <div><Image src={giraffe} alt="giraffe image"></Image></div>
 
     <h1 className='relative font-medium text-5xl pt-16 pb-2 mb-24 text-center'>MEDIA</h1>
@@ -82,7 +82,7 @@ export default async function Home() {
       </div>
     </div>
 
-    </body>
+    </div>
   );
 
 }
