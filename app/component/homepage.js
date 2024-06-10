@@ -9,7 +9,6 @@ export default async function HomePage() {
     async function getTime() {
         const query = `*[_type == "meeting"]`;
         const times = await client.fetch(query);
-        console.log(times);
         return times;
     }
 

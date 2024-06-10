@@ -11,17 +11,17 @@ export default function Footer() {
                     </div>
                     <div class="flex flex-row gap-2 mt-1 items-center">
                         <Link href={"https://www.instagram.com/viableveganismuw/"} target="_blank">
-                            <img src="Seongha/ig-icon.png"/>
+                            <img src="Seongha/ig-icon.png" alt="instagram"/>
                         </Link>
                         <Link href={"https://huskylink.washington.edu/organization/viableveganismuw"} target="_blank">
-                            <img src="Seongha/mail-icon.png"/>
+                            <img src="Seongha/mail-icon.png" alt="email"/>
                         </Link>
 
                     </div>
                 </section>
                 <section class="flex flex-col gap-3">
                     <div class="flex items-center justify-center">
-                        <img src="Seongha/vegan-logo.png" class="max-w-12 max-h-12"/>
+                        <img src="Seongha/vegan-logo.png" class="max-w-12 max-h-12" alt="logo"/>
                     </div>
                     <div class="flex flex-row gap-6">
                         <Link href="./">
@@ -32,6 +32,9 @@ export default function Footer() {
                         </Link>
                         <Link href="/resource">
                             Resources
+                        </Link>
+                        <Link href="/meal">
+                            Meals
                         </Link>
                         <Link href="/contact">
                             Contact us

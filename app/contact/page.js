@@ -21,7 +21,7 @@ export default function Home() {
     let email = document.getElementById("email").value;
     if (emailPattern.test(email) || email.length == 0){
       alert("Failed! invalid email address!");
-      console.log("invalid email", email);
+      // console.log("invalid email", email);
       return; // Exit early if email is invalid
     } else if (isChecked) {
     emailjs
@@ -31,13 +31,13 @@ export default function Home() {
     .then(
         () => {
             alert("Success! You are now enrolled in our mailing list!");
-            console.log('SUCCESS!');
-            console.log("valid email", email);
+            // console.log('SUCCESS!');
+            // console.log("valid email", email);
             e.target.reset();
         },
         (error) => {
             alert("Failed");
-            console.log('FAILED...', error.text);
+            // console.log('FAILED...', error.text);
         },
     );
     } else {
@@ -48,13 +48,13 @@ export default function Home() {
     .then(
         () => {
             alert("Thank you for contacting us! We will reach back to you soon!");
-            console.log('SUCCESS!');
-            console.log("valid email", email);
+            // console.log('SUCCESS!');
+            // console.log("valid email", email);
             e.target.reset();
         },
         (error) => {
             alert("Failed");
-            console.log('FAILED...', error.text);
+            // console.log('FAILED...', error.text);
         },
     );
     }
@@ -115,8 +115,8 @@ export default function Home() {
           <button className="px-6 py-2 font-semibold bg-greenButton text-white rounded-2xl shadow-sm opacity-100 text-lg" type="submit">Send Message</button>
         </form>
         <div><Image className="relative left-44" src="/william/circle2.png" width={500} height={500} alt="picture"></Image>
-        <div className="relative -top-64 left-64"><Image className="relative -top-60 left-2" src="/william/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
-        <div className="relative "><div className="relative top-56 -left-4 z-10"><Image className="relative top-2 left-1" src="/william/pic1.png" width={200} height={200} alt="picture"></Image></div>
+        <div className="relative -top-60 left-60"><Image className="relative -top-60 left-2" src="/william/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
+        <div className="relative "><div className="relative top-56 -left-6 z-10"><Image className="relative top-1 left-1" src="/william/pic1.png" width={200} height={200} alt="picture"></Image></div>
         <div className="relative top-4 -left-20"><Image className="relative -left-2" src="/william/circle1.png" width={350} height={350} alt="picture" priority></Image></div></div>
     </div>
     </div>
