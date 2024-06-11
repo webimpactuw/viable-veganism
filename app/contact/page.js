@@ -25,8 +25,8 @@ export default function Home() {
       return; // Exit early if email is invalid
     } else if (isChecked) {
     emailjs
-    .sendForm('service_5nqh7do', 'template_imdbvck', form.current, {
-                publicKey: 'nj1Mx2evXp2A2C8pH',
+    .sendForm('service_lz40a46', 'template_wp4a0tp', form.current, {
+                publicKey: 'LdVLLdjw0OVTXjVdL',
             })
     .then(
         () => {
@@ -42,8 +42,8 @@ export default function Home() {
     );
     } else {
       emailjs
-    .sendForm('service_5nqh7do', 'template_c8r8utk', form.current, {
-                publicKey: 'nj1Mx2evXp2A2C8pH',
+    .sendForm('service_lz40a46', 'template_nr01i6k', form.current, {
+                publicKey: 'LdVLLdjw0OVTXjVdL',
             })
     .then(
         () => {

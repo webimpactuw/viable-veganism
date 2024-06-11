@@ -59,7 +59,7 @@ export default async function resource() {
     <div className=""><Image className="object-none" src={rt} width={1600} height={200} alt="yellow-top"></Image></div>
     <h1 className='relative font-medium text-5xl pt-16 pb-2 mb-24 text-center h-0 z-10'>UPCOMING EVENTS</h1>
     <div className='flex flex-row justify-center h-4'>
-    <iframe className="relative border:solid 1px #777 rounded-3xl w-4/6 h-300 z-10 top-8" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&bgcolor=%231b53b4&showPrint=0&showTitle=0&src=dHNhaTcyNkB1dy5lZHU&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=dXcuZWR1X2xycmNvaXN1b3Q2YWw2aGpxNmpvY3FzcmprQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%23795548&color=%230B8043" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <iframe className="relative border:solid 1px #777 rounded-xl w-4/6 h-300 z-10 top-8" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FToronto&bgcolor=%23ffffff&src=dmlhYmxldmVnYW5pc211d0B1dy5lZHU&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uY2FuYWRpYW4jaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039BE5&color=%2333B679&color=%230B8043"  width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
     <div className="relative -top-48 z-1"><Image src={rm}  alt="yellow-mid"></Image></div>
     <div className="relative -top-48"><Image className="object-none" src={rb} width={1600} height={200}  alt="yellow-mid"></Image></div>
