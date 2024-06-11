@@ -115,9 +115,9 @@ export default function Home() {
           <button className="px-6 py-2 font-semibold bg-greenButton text-white rounded-2xl shadow-sm opacity-100 text-lg" type="submit">Send Message</button>
         </form>
         <div><Image className="relative left-44" src="/william/circle2.png" width={500} height={500} alt="picture"></Image>
-        <div className="relative -top-60 left-60"><Image className="relative -top-60 left-2" src="/william/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
+        <div className="relative -top-64 left-60"><Image className="relative -top-60 left-6" src="/william/pic2.png" width={330} height={330} alt="picture"></Image></div></div>
         <div className="relative "><div className="relative top-56 -left-6 z-10"><Image className="relative top-1 left-1" src="/william/pic1.png" width={200} height={200} alt="picture"></Image></div>
-        <div className="relative top-4 -left-20"><Image className="relative -left-2" src="/william/circle1.png" width={350} height={350} alt="picture" priority></Image></div></div>
+        <div className="relative top-2 -left-20"><Image className="relative -left-4" src="/william/circle1.png" width={350} height={350} alt="picture" priority></Image></div></div>
     </div>
     </div>
 

@@ -15,7 +15,7 @@ export default function DropDownTabs() {
   const textStyle = {
     fontFamily: 'sans-serif',
     fontWeight: 400,
-    fontSize: '22px',
+    fontSize: '20px',
     lineHeight: '37.6px',
   };
 
@@ -32,7 +32,7 @@ export default function DropDownTabs() {
           </div>
         </AccordionItem>
         <AccordionItem key="3" aria-label="Dropdown 3" title="How do you make sure you get enough vitamins and minerals as a vegan?" className="font-bold text-xl bg-customPurple" style={accordionStyle}>
-          <div className="font-normal leading-loose pt-5" style={textStyle}> 
+          <div className="font-normal leading-loose pt-5" style={textStyle}>
             Many brands of supplements offer certified vegan versions of their products. It should not be assumed that supplements are vegan if not labeled as such, but most common grocery stores and pharmacies sell vegan vitamins/minerals such as calcium, B12, Vitamin D3, iron, etc. that can be low in a plant-based diet. 
           </div>
         </AccordionItem>
