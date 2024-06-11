@@ -3,7 +3,6 @@ import React from "react";
 import DropDownTabs from "./dropdown";
 import Carousel from "./carousel";
 import './css/homepage.css';
-export const revalidate = 5;
 
 export default async function HomePage() {
     async function getTime() {
